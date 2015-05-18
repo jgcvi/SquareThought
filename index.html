@@ -1,1 +1,156 @@
-Hello world
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="./stylesheet.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			function shake(li) {
+				$('#' + li.id).effect("shake")
+			}
+		})
+
+	</script>
+</head>
+
+<body>	
+<section class="home" id="home">
+	<div class="jumbotron">
+		<h1>John Coats</h1>
+		<h3>Vagabond SWE, lover of all things computer-ey</h3>
+	</div>
+	<!-- Anything new you want to put at the top, put here -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">WebSiteName</a>
+	    </div>
+	    <div>
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#home">Home</a></li>
+	        <li><a href="#about">About Me</a></li>
+	        <li><a href="#skills">Skills</a></li>
+	        <li><a href="#experience">Projects/Experience</a></li>
+	        <li><a href="./blog">Blog</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</section>
+
+<section class="about" id="about" style="padding-left: 10px">
+	<center><h3>About Me</h3></center>
+	<div class="row" style="font-size:115%">
+		<div class="col-md-5 col-md-offset-1" style="padding-left:30px">
+			<!--
+			I'm a little bit on the nerdy side; but if you're looking at this, you probably expect
+			that. My main passions lies in gluttony of languages first, and interesting algorithms
+			second. I graduated from The University of Arizona in the fall of 2014, but I don't 
+			think that's an excuse to stop learning new things; and I have no intention of letting
+			it be.
+
+			When not on my computer, I'm a huge music buff; I play a number of instruments, and
+			love concert going. I have a minor obsession of all things with motors, and spend as
+			much time as I can taking weekend trips with my motorcycle or car. The rest of my spare
+			time is spent at the gym. -->
+
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		</div>
+		<div class="col-md-5">
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		</div>
+	</div>
+</section>
+
+<section class="skills" id="skills">
+	<center><h3>Languages and other skills</h3></center>
+
+	<div class="skill_list">
+		<ul class="list-inline">
+			<li>
+				<img id="java" onmouseover="shake(this)" src="./imgs/java_logo.png" alt="Java" title="three years and counting">
+			</li>
+			<li>
+				<img id="c" onmouseover="shake(this.id)" src="./imgs/c.png" alt="C language">
+			</li>
+			<li>
+				<img id="ruby" onmouseover="shake(this.id)" src="./imgs/ruby_logo.png" alt="Ruby [on Rails]">
+			</li>
+			<li>
+				<img id="js" onmouseover="shake(this)" src="./imgs/js_logo.png" alt="Javascript">
+			</li>
+			<li>
+				<img id="haskell" onmouseover="shake(this.id)" src="./imgs/haskell_logo.png" alt="Haskell">
+			</li>
+			<li>
+				<img id="rust" onmouseover="shake(this.id)" src="./imgs/rust_logo.png" alt="Rust">
+			</li>
+<!--		<li>Various relational and non-relational databases</li>
+			<li>ETL operations</li>
+-->
+		</ul>
+	</div>
+</section>
+
+<section class="projects" id="experience" style="font-size:115%">
+	<center><h3>Projects</h3></center>
+	<ul class="project_list">
+		<li>
+			<h4>Text-to-911</h4>
+		</li>
+		<li>
+			<h4>Sliding Window Protocol (SWP)</h4>
+		</li>
+		<li>
+
+		</li>
+	</ul>
+	<center><h3>Work Experience</h3></center>
+	<ul class="work_list">
+		<li>
+			<h4>General Motors</h4>
+			<h5>Software Developer</h5>
+			I'm working in Java, using JSP and working on both the Spring and the Endeca frameworks for two separate projects. Occasionally, I'm recruited to the front end, and I'm also responsible for creating ETL jobs.
+		</li>
+		<li>
+			<h4>IBM</h4>
+			<h5>System Verification Testing</h5>
+			This was my internship during my time in college; I was responsible for testing, automation, and various other what-have-yous required for the testing, included working with various OS'es.
+		</li>
+</section>
+
+<section class="contact_me" id="contact_me">
+	<div class="col-md-7">
+
+	</div>
+		<table id="sites">
+			<tr>
+				<td>
+					<a href="https://github.com/jgcvi/">
+						<img src="./imgs/github_logo.png" alt="Github Account">
+					</a>
+				</td>
+				<td>
+					<a href="https://www.linkedin.com/pub/john-coats/9a/251/206">
+						<img src="./imgs/linkedin_logo.png" alt="Linkedin Profile">
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="https://www.facebook.com/john.coatsvi">
+						<img src="./imgs/facebook_logo.png" alt="Facebook Account">
+					</a>
+				</td>
+				<td>
+					<a href="mailto:coatsj11@gmail.com">
+						<img src="./imgs/email_logo.png" alt="email me!">
+					</a>
+				</td>
+			</td>
+		</table>
+	</div>
+</section>
+</body>
